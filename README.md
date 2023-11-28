@@ -1,13 +1,13 @@
 # Address Classification
 
-In this exercise, let's expand upon the problem of node classification in our graph database, as discussed earlier. Our graph database comprises two types of data: 1. nodes representing wallet addresses, 2. directed edges between nodes representing transactions. We have structured data with numerical values only. Our goal is to spot anomalies in the transactions and identify the wallets associated with these transactions and assign a risk level to it.
-
-Please proceed with designing and implementing a model for this purpose, and train it using the porvided data in `transactions.csv`.
-For simplicity's sake, there will be no properties on the nodes, only properties on the edges.
+In this exercise, let's delve depper into the problem of node classification in our graph database, as discussed earlier. Our graph database comprises two types of data: 1. nodes that represent wallet addresses and 2. directed edges that together represent transactions. For simplicity, we collected and prepared the dataset `transactions.csv`. Your goal is to spot anomalies in the transactions and identify the wallets associated with these transactions and assign a risk level to it.
 
 transaction example:
 ```python
 {
+  # transaction fee
+  "fee": "50400",
+
   # recipient wallet
   "to": "1Fk3kobqRuBoXrMELAL8SMTJFsCfJxvs7e",
 
@@ -28,4 +28,4 @@ transaction example:
 }
 ```
 
-Note that this dataset is only a sample of a larger dataset, you might not be able to extract meaningful insight. Therefore the result is not very important, we are interested in your process and how you approach the problem. Please provide detailed explainations in every step of your solution.
+Note that this dataset is a random sample of a larger dataset, you might not be able to extract meaningful insight. Therefore the result is not very important and any level of completness is acceptable, we are interested in your process and how you approach the problem. This is an OPEN question, there are no wrong answers, just remember to provide detailed explanations.
